@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+div{
+    border: solid 1px black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: auto;
+}
+#efgh{
+    display: flex;
+    flex-wrap: wrap;
+}
+#efgh > div{
+    flex: 1 1 calc(50%);
+}
+
+@media (min-width: 768px){
+    body{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #cdefghi{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    #a{
+        width: 100%;
+    }
+    #b{
+        width: 20%;
+    }
+    #c, #d{
+        width: 50%;
+    }
+    #efgh{
+        width: 100%;
+    }
+    #efgh > div{
+        flex: 1 1 calc(20%);
+    }
+    #i{
+        width: 100%;
+    }
+}
+
